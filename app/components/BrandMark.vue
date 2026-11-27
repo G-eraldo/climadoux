@@ -1,0 +1,17 @@
+<script setup>
+defineProps({ size: { type: Number, default: 28 } })
+</script>
+<template>
+  <svg :width="size" :height="size" viewBox="0 0 32 32" aria-hidden="true">
+    <defs>
+      <linearGradient id="cd-mark" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#e07a5f" />
+        <stop offset=".55" stop-color="#c8553d" />
+        <stop offset="1" stop-color="#2f6fb3" />
+      </linearGradient>
+    </defs>
+    <rect width="32" height="32" rx="9" fill="url(#cd-mark)" />
+    <path d="M8 19c2.5-3 5.5-3 8 0s5.5 3 8 0" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" />
+    <path d="M8 13c2.5-3 5.5-3 8 0s5.5 3 8 0" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2.4" stroke-linecap="round" />
+  </svg>
+</template>
