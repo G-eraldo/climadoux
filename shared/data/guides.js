@@ -473,7 +473,7 @@ export const hubs = {
     description: 'Soufflant, bain d’huile, convecteur, inertie, infrarouge : six chauffages d’appoint comparés sur leurs caractéristiques officielles, avec leurs limites.',
     lead: 'Six appareils, cinq technologies. Le bon choix dépend surtout de la durée pendant laquelle vous allez chauffer.',
     updatedAt: '2026-11-28',
-    quick: [
+    picks: [
       { label: 'Salle de bain, usage court', slug: 'rowenta-intense-comfort-aqua', why: 'Soufflant céramique 1 000 / 2 000 W : chaleur immédiate, léger (2 kg).' },
       { label: 'Séjour, toute la soirée', slug: 'delonghi-radia-s-easytronic', why: 'Bain d’huile 2 500 W, thermostat électronique : chaleur douce, stable et silencieuse.' },
       { label: 'Petite pièce, tous les jours', slug: 'taurus-nepal-1500', why: 'Inertie 1 500 W programmable à la semaine, détection de fenêtre ouverte.' }
@@ -498,7 +498,7 @@ export const hubs = {
     description: 'Ultrasons, évaporation ou vapeur : six humidificateurs comparés sur débit, réservoir, surface et bruit, avec leurs contraintes d’entretien.',
     lead: 'Air sec du chauffage, gorge irritée au réveil ? Visez 30 à 50 % d’humidité, et choisissez la technologie selon votre eau et votre tolérance à l’entretien.',
     updatedAt: '2026-11-28',
-    quick: [
+    picks: [
       { label: 'Chambre', slug: 'levoit-dual-200s', why: 'Ultrasons avec capteur d’humidité : s’arrête seul au bon taux, 19 dB annoncés.' },
       { label: 'Eau calcaire', slug: 'philips-humidificateur-2000-hu2510', why: 'Évaporation, pas de poussière blanche, débit publié de 190 ml/h.' },
       { label: 'Hygiène avant tout', slug: 'boneco-s250', why: 'Vapeur chaude : l’eau est bouillie, aucun filtre. Consomme davantage.' }
@@ -523,7 +523,7 @@ export const hubs = {
     description: 'Six purificateurs d’air HEPA comparés sur leur CADR réel, leur filtre et leur bruit, avec la surface qu’ils peuvent vraiment traiter.',
     lead: 'Pollens, poussière, animaux : un purificateur se choisit d’après son CADR. Nous recalculons la surface conseillée pour que vous compariez sur une même base.',
     updatedAt: '2026-11-28',
-    quick: [
+    picks: [
       { label: 'Chambre', slug: 'philips-purificateur-900-ac0950', why: 'CADR 250 m³/h, 20,5 dB au ralenti, HEPA + charbon actif.' },
       { label: 'Séjour moyen', slug: 'xiaomi-smart-air-purifier-4-lite', why: 'CADR 360 m³/h, filtre H13 3-en-1, capteurs PM2.5.' },
       { label: 'Grande pièce, pollens', slug: 'xiaomi-smart-air-purifier-4-pro', why: 'CADR 500 m³/h, le plus élevé de la sélection, capteurs PM2.5 et PM10.' }
@@ -542,6 +542,36 @@ export const hubs = {
       { q: 'Un purificateur aide-t-il contre les allergies ?', a: 'Il réduit la quantité de particules en suspension dans la pièce, dont les pollens. L’EPA note des bénéfices mesurés mais généralement modestes. Il complète, sans les remplacer, les conseils de votre médecin.' }
     ]
   }
+}
+
+// FAQ des fiches produits : réponses construites à partir des données de la fiche, sans ajout.
+export function productFaq(p) {
+  const t = p.table
+  const tested = { q: `Le ${p.name} a-t-il été testé par Le Climat Idéal ?`, a: 'Non. Cette fiche est documentaire : elle s’appuie sur les caractéristiques publiées par le fabricant ou le marchand, avec leur source et leur date de vérification.' }
+  if (p.category === 'chauffage') {
+    const w = Number(String(t.power).replace(/\D/g, ''))
+    return [
+      { q: `Quelle surface chauffe le ${p.name} ?`, a: t.surface ? `${t.surface} selon le fabricant, pour une pièce correctement isolée. Prévoyez plus large dans une pièce ancienne, sous les toits ou très vitrée.` : 'Le fabricant ne publie pas de surface conseillée. Réservez-le à une petite pièce ou à un usage ponctuel.' },
+      { q: `Combien consomme le ${p.name} ?`, a: `À pleine puissance (${t.power}), il consomme ${(w / 1000).toLocaleString('fr-FR')} kWh par heure de chauffe. Avec le thermostat, la consommation réelle est plus faible. Multipliez par le prix du kWh de votre contrat pour obtenir le coût.` },
+      { q: `Le ${p.name} a-t-il un thermostat ?`, a: `${t.thermostat}.` },
+      tested
+    ]
+  }
+  if (p.category === 'humidificateur') {
+    return [
+      { q: `Pour quelle surface le ${p.name} est-il prévu ?`, a: `${t.surface} selon le fabricant, avec un réservoir de ${t.tank}.` },
+      { q: `Le ${p.name} s’arrête-t-il au bon taux d’humidité ?`, a: t.hygro === 'Oui' ? 'Oui : il dispose d’un hygrostat ou d’un capteur d’humidité qui régule son fonctionnement.' : 'La fiche ne confirme pas d’hygrostat. Utilisez un hygromètre pour rester entre 30 et 50 % d’humidité.' },
+      { q: `Quelle technologie utilise le ${p.name} ?`, a: `${t.tech}. Les modèles à ultrasons peuvent laisser une poussière blanche avec une eau calcaire ; l’évaporation et la vapeur l’évitent.` },
+      tested
+    ]
+  }
+  const cadr = Number(String(t.cadr).replace(/\D/g, ''))
+  return [
+    { q: `Pour quelle pièce le ${p.name} convient-il ?`, a: `Avec un CADR de ${t.cadr}, il renouvelle 5 fois par heure l’air d’environ ${Math.round(cadr / 12.5)} m² sous 2,5 m de plafond. C’est notre repère de calcul ; la surface annoncée par le fabricant est souvent plus grande.` },
+    { q: `Quel filtre utilise le ${p.name} ?`, a: `${t.filter}. Le prix et la durée de vie du filtre de rechange font partie du coût réel.` },
+    { q: `Le ${p.name} est-il silencieux ?`, a: t.noise && t.noise !== '—' ? `${t.noise} au ralenti selon le fabricant. Pour une chambre, visez moins de 25 dB.` : 'Le niveau sonore au ralenti n’est pas publié officiellement.' },
+    tested
+  ]
 }
 
 export const guideBySlug = slug => guides.find(g => g.slug === slug)

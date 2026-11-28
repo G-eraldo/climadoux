@@ -38,7 +38,11 @@ const raw = [
     specs: [['Technologie', 'Convecteur mobile avec turbo ventilé'], ['Puissance', '1 200 W / 2 400 W'], ['Surface annoncée', '25 m²'], ['Thermostat', 'Mécanique, position antigel'], ['Programmation', 'Non'], ['Poids', '4,3 kg'], ['Garantie', '1 an selon la fiche']],
     strengths: ['Puissance élevée pour monter vite en température', 'Fonctionne silencieusement sans le turbo', 'Simple : pas d’électronique à configurer'],
     limits: ['Thermostat mécanique : régulation moins fine', 'Sécurité surchauffe et antichute non mentionnées sur la fiche', '2 400 W : vérifier que le circuit électrique le supporte avec les autres appareils'],
-    verdict: [{ p: 'Un convecteur classique et robuste. Il convient à une pièce d’appoint chauffée plusieurs heures, sans recherche de régulation fine.' }]
+    verdict: [
+      { p: 'Un convecteur classique et robuste. Il convient à une pièce d’appoint chauffée plusieurs heures, sans recherche de régulation fine.' },
+      { p: 'Son atout est la **fonction turbo** : le ventilateur accélère la montée en température d’une pièce froide, puis on peut revenir à la convection silencieuse. Avec 2 400 W au maximum, c’est l’appareil le plus puissant de la sélection après le bain d’huile De’Longhi : il absorbe à lui seul une bonne part d’un circuit de prises de 16 A. Branchez-le seul sur une prise murale, câble déroulé.' },
+      { p: 'Le thermostat mécanique se règle à la molette, sans affichage de température : comptez quelques essais pour trouver la position qui donne environ 19 °C dans votre pièce. La position antigel le rend utile dans une pièce peu occupée (atelier, cellier) pour éviter le gel.' }
+    ]
   },
   {
     slug: 'delonghi-radia-s-easytronic', category: 'chauffage', brand: 'De’Longhi', model: 'RadiaS Easytronic TRRS1225', name: 'De’Longhi RadiaS Easytronic', asin: 'B0DKC85RYT',
@@ -49,7 +53,11 @@ const raw = [
     specs: [['Technologie', 'Radiateur à bain d’huile, 12 éléments'], ['Puissance', '2 500 W'], ['Volume annoncé', '75 m³ (≈ 30 m² sous 2,5 m de plafond)'], ['Thermostat', 'Électronique Easytronic, 12 températures, 3 zones'], ['Sécurité', 'Thermostat de sécurité, fonction antigel'], ['Poids', '15,7 kg'], ['Mobilité', 'Roulettes pliantes intégrées']],
     strengths: ['Chaleur douce qui continue après l’arrêt grâce à l’huile', 'Silencieux : aucun ventilateur', 'Régulation électronique précise'],
     limits: ['Lourd (15,7 kg) et lent à chauffer', 'Paliers de puissance non indiqués sur la fiche', 'Puissance élevée à surveiller sur la facture si utilisé longtemps'],
-    verdict: [{ p: 'Le choix « confort » de la sélection pour une grande pièce occupée toute la soirée. Il met du temps à chauffer mais la chaleur est stable et silencieuse.' }]
+    verdict: [
+      { p: 'Le choix « confort » de la sélection pour une grande pièce occupée toute la soirée. Il met du temps à chauffer mais la chaleur est stable et silencieuse.' },
+      { p: 'Le principe du **bain d’huile** : les résistances chauffent une huile scellée dans les 12 éléments, qui restitue la chaleur par rayonnement et convection, et continue de chauffer quelques dizaines de minutes après la coupure. C’est l’inverse d’un soufflant : lent à démarrer, mais sans souffle d’air ni bruit de ventilateur, ce qui convient à une chambre.' },
+      { p: 'Le thermostat électronique Easytronic propose 12 températures réparties en trois zones de confort, plus précis qu’une molette. Avec 15,7 kg, il se déplace sur ses roulettes mais reste un appareil qu’on installe pour la saison plutôt qu’on promène de pièce en pièce. Allumez-le une demi-heure avant d’occuper la pièce.' }
+    ]
   },
   {
     slug: 'taurus-nepal-1500', category: 'chauffage', brand: 'Taurus', model: 'Nepal 1500 (TT1503)', name: 'Taurus Nepal 1500', asin: 'B0FV93VKPY',
@@ -98,7 +106,7 @@ const raw = [
     verdict: [{ p: 'Le meilleur compromis de la sélection pour une chambre si vous voulez un appareil qui s’arrête seul au bon taux d’humidité.' }]
   },
   {
-    slug: 'philips-humidificateur-2000-hu2510', category: 'humidificateur', brand: 'Philips', model: 'HU2510/10 (Série 2000)', name: 'Philips Humidificateur 2000', asin: 'B09ZBJ4HWL',
+    slug: 'philips-humidificateur-2000-hu2510', category: 'humidificateur', brand: 'Philips', model: 'HU2510/10 (Série 2000)', name: 'Philips HU2510', asin: 'B09ZBJ4HWL',
     type: 'Évaporation',
     bestFor: 'Pour éviter la poussière blanche des ultrasons : évaporation naturelle, 190 ml/h, pièces jusqu’à 31 m².',
     keySpecs: [['Débit', '190 ml/h'], ['Surface annoncée', '31 m²'], ['Réservoir', '2 L'], ['Bruit annoncé', '32 dB(A)']],
