@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   vite: { plugins: [tailwindcss()] },
   runtimeConfig: {
     public: {
-      siteUrl: 'https://climadoux.fr',
+      siteUrl: 'https://leclimatideal.fr',
       siteLive: false,
       amazonTag: ''
     }

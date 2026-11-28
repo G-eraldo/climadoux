@@ -1,4 +1,4 @@
-// Catalogue Climadoux. ASIN contrôlés un par un sur amazon.fr le 27 novembre 2026 (titre = modèle exact, offre en stock).
+// Catalogue Le Climat Idéal. ASIN contrôlés un par un sur amazon.fr le 27 novembre 2026 (titre = modèle exact, offre en stock).
 // Caractéristiques : fiche Amazon.fr (points clés et titre) sauf mention contraire ; les valeurs incohérentes
 // des tableaux Amazon ne sont pas reprises. Donnée absente = non publiée. Aucun prix, aucune note.
 // Fiches documentaires : aucun de ces appareils n'a été testé par l'éditeur.

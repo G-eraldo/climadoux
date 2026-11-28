@@ -1,7 +1,7 @@
 // Identité et structure du site. Les contenus vivent dans products.js et guides.js.
 export const site = {
-  name: 'Climadoux',
-  domain: 'climadoux.fr',
+  name: 'Le Climat Idéal',
+  domain: 'leclimatideal.fr',
   tagline: 'Le bon air, à la bonne température.',
   description: 'Guides d’achat et fiches claires pour choisir un humidificateur, un chauffage d’appoint ou un purificateur d’air adapté à votre pièce.',
   themeColor: '#faf7f2',

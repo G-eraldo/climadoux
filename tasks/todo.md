@@ -1,4 +1,4 @@
-# Climadoux — suivi
+# Le Climat Idéal — suivi
 
 ## Fait (27/11/2026)
 - [x] Socle Nuxt 4 SSR + Tailwind 4, design clair et chaleureux (≠ DomoKlub), menu translucide, mode réduit du mouvement.
@@ -9,8 +9,8 @@
 - [x] robots.txt / sitemap / llms.txt conditionnés à `SITE_LIVE` ; `check:content` et `check:seo` (36 pages OK).
 
 ## Pour mettre en ligne (à faire par l’éditeur)
-- [ ] Acheter `climadoux.fr`.
-- [ ] Créer un identifiant de suivi Amazon dédié (Partenaires → Gérer les identifiants de suivi), ex. `climadoux-21`, et ajouter le site dans la liste des sites du compte.
+- [x] Domaine `leclimatideal.fr` acheté (28/11/2026).
+- [ ] Créer un identifiant de suivi Amazon dédié (Partenaires → Gérer les identifiants de suivi), ex. `leclimatideal-21`, et ajouter le site dans la liste des sites du compte.
 - [ ] Créer le dépôt GitHub, connecter Dokploy (voir README), variables d’environnement.
 - [ ] Passer `NUXT_PUBLIC_SITE_LIVE=true`, Search Console + sitemap.
 

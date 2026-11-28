@@ -275,7 +275,7 @@ export const hubs = {
       { label: 'Séjour', title: 'CADR 350 m³/h et plus', text: 'Pour 25 à 40 m², selon la hauteur sous plafond.' },
       { label: 'Odeurs', title: 'HEPA + charbon actif', text: 'Le HEPA seul ne retient pas les gaz ni les odeurs.' }
     ],
-    selectionNote: 'CADR et caractéristiques relevés le 27 novembre 2026. * Surface conseillée calculée par Climadoux pour 5 renouvellements d’air par heure sous 2,5 m de plafond.',
+    selectionNote: 'CADR et caractéristiques relevés le 27 novembre 2026. * Surface conseillée calculée par nos soins pour 5 renouvellements d’air par heure sous 2,5 m de plafond.',
     compare: [{ key: 'cadr', label: 'CADR' }, { key: 'surface', label: 'Surface conseillée *' }, { key: 'filter', label: 'Filtre' }, { key: 'noise', label: 'Bruit au ralenti' }],
     body: [
       { p: 'Calculez le **CADR nécessaire** : surface × hauteur sous plafond × 5. Puis choisissez le filtre et le niveau de bruit selon la pièce.' },
