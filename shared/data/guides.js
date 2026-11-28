@@ -9,6 +9,257 @@ const SRC = {
 }
 
 export const guides = [
+  {
+    "slug": "chauffage-d-appoint-chambre",
+    "category": "chauffage",
+    "kicker": "Guide",
+    "short": "Chauffage d'appoint pour la chambre : quel modèle, et surtout quel bruit",
+    "title": "Chauffage d'appoint pour la chambre : quel modèle, et surtout quel bruit",
+    "metaTitle": "Chauffage d'appoint chambre : silence, sécurité, puissance",
+    "description": "Choisir un chauffage d'appoint pour une chambre : le bruit au coucher, la régulation, les sécurités et la puissance réellement utile. Sélection parmi 6 appareils documentés.",
+    "answer": "Pour une chambre, l'ordre des critères n'est pas celui d'un séjour : le bruit passe avant la puissance, puis la régulation (un thermostat électronique tient la température au lieu de chauffer par à-coups), puis les sécurités. Un soufflant de 2 000 W chauffe vite une pièce de 12 m², mais s'entend ; un bain d'huile ou un panneau rayonnant est silencieux et lent.",
+    "publishedAt": "2026-11-28",
+    "updatedAt": "2026-11-28",
+    "products": [
+      "taurus-nepal-1500",
+      "delonghi-radia-s-easytronic",
+      "klarstein-heatpal",
+      "rowenta-intense-comfort-aqua",
+      "rowenta-vectissimo",
+      "rowenta-mini-excel-eco-safe"
+    ],
+    "body": [
+      {
+        "p": "En tant que Partenaire Amazon, Le Climat Idéal réalise un bénéfice sur les achats remplissant les conditions requises. Cela ne change pas le prix payé."
+      },
+      {
+        "h2": "1. Les quatre familles, côté chambre"
+      },
+      {
+        "table": {
+          "head": [
+            "Famille",
+            "Bruit",
+            "Montée en température",
+            "Pour une chambre"
+          ],
+          "rows": [
+            [
+              "Soufflant céramique",
+              "Ventilateur audible",
+              "Immédiate",
+              "Réveil ou salle de bain, pas pour dormir"
+            ],
+            [
+              "Convecteur (avec ou sans turbo)",
+              "Silencieux hors turbo",
+              "Moyenne",
+              "Chambre occupée en soirée"
+            ],
+            [
+              "Bain d'huile",
+              "Silencieux",
+              "Lente",
+              "Chambre ou séjour, chaleur stable"
+            ],
+            [
+              "Rayonnant / inertie",
+              "Silencieux",
+              "Lente, chaleur ressentie à proximité",
+              "Chambre petite, ou zone occupée"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Le soufflant est le seul à faire du bruit par construction : il déplace de l'air. Les trois autres chauffent sans ventilateur, ce qui règle la question du sommeil — sauf que la chaleur met plus longtemps à venir."
+      },
+      {
+        "h2": "2. Ce que valent les six appareils de la sélection"
+      },
+      {
+        "table": {
+          "head": [
+            "Modèle",
+            "Technologie",
+            "Puissance",
+            "Bruit annoncé",
+            "Régulation",
+            "Surface annoncée",
+            "Poids"
+          ],
+          "rows": [
+            [
+              "[Taurus Nepal 1500](/chauffages-d-appoint/taurus-nepal-1500)",
+              "Inertie acier/aluminium",
+              "1 500 W",
+              "Non communiqué (pas de ventilateur)",
+              "Électronique, programmation hebdo",
+              "14 à 16 m²",
+              "4,85 kg"
+            ],
+            [
+              "[De'Longhi RadiaS Easytronic](/chauffages-d-appoint/delonghi-radia-s-easytronic)",
+              "Bain d'huile, 12 éléments",
+              "2 500 W",
+              "Non communiqué (pas de ventilateur)",
+              "Électronique, 12 températures",
+              "75 m³ ≈ 30 m²",
+              "15,7 kg"
+            ],
+            [
+              "[Klarstein HeatPal](/chauffages-d-appoint/klarstein-heatpal)",
+              "Rayonnant infrarouge, marbre",
+              "1 300 W",
+              "Non communiqué (pas de ventilateur)",
+              "Thermostat",
+              "30 m² annoncés",
+              "11,3 kg"
+            ],
+            [
+              "[Rowenta Intense Comfort Aqua](/chauffages-d-appoint/rowenta-intense-comfort-aqua)",
+              "Soufflant céramique",
+              "1 000 / 2 000 W",
+              "29 dB(A) annoncés",
+              "Thermostat",
+              "35 m² annoncés",
+              "2 kg"
+            ],
+            [
+              "[Rowenta Vectissimo Turbo](/chauffages-d-appoint/rowenta-vectissimo)",
+              "Convecteur + turbo",
+              "1 200 / 2 400 W",
+              "Non communiqué",
+              "Mécanique",
+              "25 m²",
+              "4,3 kg"
+            ],
+            [
+              "[Rowenta Mini Excel Eco Safe](/chauffages-d-appoint/rowenta-mini-excel-eco-safe)",
+              "Soufflant compact",
+              "1 000 / 2 000 W",
+              "50 dB(A) en silencieux",
+              "Électronique",
+              "Non indiquée",
+              "1,7 kg"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Trois remarques sur ces chiffres, tous issus des fiches produit vérifiées le 27/11/2026 :"
+      },
+      {
+        "ul": [
+          "**29 dB(A) ne veut pas dire inaudible.** Un niveau sonore se mesure à une distance et sur un régime précis ; sur un soufflant, le chiffre correspond souvent au réglage le plus bas. À pleine puissance, le bruit monte.",
+          "**50 dB(A) est un vrai niveau de conversation**, pas un niveau de chambre. C'est cohérent avec l'usage prévu par la fiche : un petit bureau, une chambre d'amis.",
+          "**Les surfaces annoncées sont optimistes** dès que l'isolation est moyenne. Une chambre de 12 m² mal isolée se chauffe mieux avec 1 500 W bien régulés qu'avec 2 500 W en marche forcée."
+        ]
+      },
+      {
+        "h2": "3. Le gagnant par usage"
+      },
+      {
+        "table": {
+          "head": [
+            "Votre situation",
+            "Appareil",
+            "Pourquoi"
+          ],
+          "rows": [
+            [
+              "Petite chambre chauffée tous les soirs",
+              "Taurus Nepal 1500",
+              "Programmation hebdomadaire, détection de fenêtre ouverte, verrouillage enfant, IP24, posable au mur"
+            ],
+            [
+              "Chambre ou séjour jusqu'à 30 m², silence total",
+              "De'Longhi RadiaS Easytronic",
+              "Aucun ventilateur, chaleur stable après l'arrêt ; lourd et lent, à installer une fois"
+            ],
+            [
+              "Réveil rapide, salle de bain attenante",
+              "Rowenta Intense Comfort Aqua",
+              "29 dB(A) annoncés au réglage bas, 2 kg, deux puissances"
+            ],
+            [
+              "Pièce de vie, chaleur ressentie sans attendre",
+              "Klarstein HeatPal",
+              "Rayonnement direct, silencieux ; chauffe ce qu'il « voit », à placer face à la zone occupée"
+            ],
+            [
+              "Chambre d'amis, usage court",
+              "Rowenta Mini Excel Eco Safe",
+              "Compact et sécurisé, mais 50 dB(A) : à réserver aux moments où l'on ne dort pas"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Deux appareils ne sont pas retenus pour une chambre : le **Mini Excel** à cause du bruit annoncé, et le **Vectissimo** parce que son thermostat mécanique régule moins finement et que 2 400 W sont difficiles à justifier dans une petite pièce. Ils restent pertinents ailleurs, et leurs fiches le disent."
+      },
+      {
+        "h2": "4. Puissance : le repère, et le piège du circuit"
+      },
+      {
+        "p": "Le repère de dimensionnement courant est de l'ordre de **100 W par m²** pour une hauteur de plafond standard, à ajuster fortement selon l'isolation, le nombre de murs extérieurs et le vitrage. Ce n'est pas une norme : c'est un point de départ pour éviter d'acheter 2 000 W pour 9 m²."
+      },
+      {
+        "p": "Le piège est électrique. Un appareil de :"
+      },
+      {
+        "ul": [
+          "**1 000 W** appelle environ 4,3 A ;",
+          "**1 500 W** environ 6,5 A ;",
+          "**2 000 W** environ 8,7 A ;",
+          "**2 500 W** environ 10,9 A."
+        ]
+      },
+      {
+        "p": "Sur une prise 16 A, un radiateur de 2 500 W occupe presque toute la ligne. Si la même ligne alimente la chambre et le couloir, le disjoncteur fait son travail — au mauvais moment. Vérifiez ce qui partage le circuit avant de choisir la puissance maximale."
+      },
+      {
+        "p": "Côté consommation, le calcul est direct : 2 000 W pendant 2 h = 4 kWh. Le coût dépend de votre tarif ; le détail de la formule est dans [combien consomme un chauffage d'appoint](/guides/consommation-chauffage-d-appoint)."
+      },
+      {
+        "h2": "5. Questions fréquentes"
+      },
+      {
+        "p": "**Soufflant ou bain d'huile pour dormir ?** Bain d'huile, panneau rayonnant ou inertie : aucun ventilateur, donc aucun bruit de soufflerie. Le soufflant reste utile pour chauffer la pièce avant de se coucher, puis s'éteint."
+      },
+      {
+        "p": "**Quelle puissance pour une chambre de 12 m² ?** Le repère donne environ 1 200 W. Un appareil de 1 500 W régulé fait mieux qu'un 2 000 W qui chauffe par à-coups, surtout si la chambre est bien isolée."
+      },
+      {
+        "p": "**Peut-on le laisser branché toute la nuit ?** Un appareil mobile n'est pas prévu pour fonctionner sans surveillance : suivez la notice du fabricant, ne couvrez jamais l'appareil, et dégagez ce qui se trouve autour. Un appareil fixe et programmable est plus adapté à un usage nocturne régulier."
+      },
+      {
+        "p": "**Et pour une chambre de bébé ?** Trois principes raisonnables : un appareil stable ou fixé hors de portée, une régulation qui évite les à-coups, et les distances de la notice respectées. Aucune source normative n'a été vérifiée sur ce cas précis : à confirmer auprès du fabricant avant l'achat, et à arbitrer avec un professionnel de santé pour un nourrisson."
+      },
+      {
+        "p": "**Pourquoi mon soufflant annoncé à 29 dB(A) fait plus de bruit ?** Parce que la mesure correspond généralement au régime le plus bas, à une distance donnée. Le mode turbo est nécessairement plus bruyant."
+      },
+      {
+        "p": "**Un appareil à 30 m² annoncés suffit-il pour 20 m² ?** En théorie oui, en pratique cela dépend de l'isolation et de la température visée. La surface annoncée est un maximum commercial, pas une garantie de confort."
+      },
+      {
+        "h2": "Sources"
+      },
+      {
+        "ul": [
+          "Fiches produit Le Climat Idéal des six appareils cités, valeurs reprises des pages marchand Amazon.fr, vérifiées le 27/11/2026.",
+          "Calculs de courant : I = P / U, avec U = 230 V (valeurs arrondies).",
+          "Repère de puissance au m² : ordre de grandeur d'usage, sans valeur normative publiée — à ajuster selon le logement."
+        ]
+      },
+      {
+        "p": "*Le Climat Idéal n'a pas testé ces appareils. Aucune mesure de bruit, de consommation ou de température n'a été réalisée pour ce guide ; les chiffres cités sont ceux des fabricants, datés à la source.*"
+      },
+      {
+        "p": "Pour le choix par famille d'appareil plutôt que par pièce : [quel chauffage d'appoint électrique choisir](/guides/quel-chauffage-d-appoint-choisir)."
+      }
+    ]
+  },
   // ——— Chauffage ———
   {
     slug: 'quel-chauffage-d-appoint-choisir', category: 'chauffage', featured: true,
