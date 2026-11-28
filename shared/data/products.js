@@ -220,7 +220,7 @@ const raw = [
   }
 ]
 
-export const products = raw.map(p => ({ sourceUrl: amazon(p.asin).sourceUrl, sourceLabel: amazon(p.asin).sourceLabel, ...p, checkedAt }))
+export const products = raw.map(p => ({ sourceUrl: amazon(p.asin).sourceUrl, sourceLabel: amazon(p.asin).sourceLabel, ...p, checkedAt: p.checkedAt ?? checkedAt }))
 
 export const productBySlug = slug => products.find(p => p.slug === slug)
 export const productsByCategory = key => products.filter(p => p.category === key)
