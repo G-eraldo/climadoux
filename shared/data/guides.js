@@ -16,7 +16,7 @@ export const guides = [
     "short": "Chauffage d'appoint pour la chambre : quel modèle, et surtout quel bruit",
     "title": "Chauffage d'appoint pour la chambre : quel modèle, et surtout quel bruit",
     "metaTitle": "Chauffage d'appoint chambre : silence, sécurité, puissance",
-    "description": "Choisir un chauffage d'appoint pour une chambre : le bruit au coucher, la régulation, les sécurités et la puissance réellement utile. Sélection parmi 6 appareils documentés.",
+    "description": "Chauffage d’appoint pour une chambre : comparez le bruit, la régulation et les sécurités de six appareils documentés avant de choisir.",
     "answer": "Pour une chambre, l'ordre des critères n'est pas celui d'un séjour : le bruit passe avant la puissance, puis la régulation (un thermostat électronique tient la température au lieu de chauffer par à-coups), puis les sécurités. Un soufflant de 2 000 W chauffe vite une pièce de 12 m², mais s'entend ; un bain d'huile ou un panneau rayonnant est silencieux et lent.",
     "publishedAt": "2026-11-28",
     "updatedAt": "2026-11-28",
